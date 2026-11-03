@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="floating-hearts"></div>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">♡ Birthday World</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#music">Music</a>
+            <a href="#letter">Letter</a>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+
+        <div class="sparkle">✧･ﾟ: *✧･ﾟ:* </div>
+
+        <p class="small-title">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+
+        <h1>Happy Birthday!</h1>
+
+        <h2>To My Favourite Person ♡</h2>
+
+        <p class="description">
+            Today is all about you!
+            May your day be filled with happiness,
+            laughter, love and beautiful memories.
+        </p>
+
+        <a href="#gallery" class="main-button">
+            Explore Your Surprise ♡
+        </a>
+
+        <div class="decoration">🎀 💜 🎂</div>
+
+    </section>
+
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery">
+
+        <p class="small-title">A LITTLE COLLECTION OF HAPPINESS</p>
+
+        <h2>Your Favourite Things ♡</h2>
+
+        <p class="section-description">
+            Because everything you love deserves a little space here.
+        </p>
+
+        <div class="photo-container">
+
+            <div class="photo-card">
+                <img src="images/idol1.jpg" alt="Favourite idol">
+                <h3>Favourite Idol</h3>
+                <p>Our superstar ✨</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/idol2.jpg" alt="Favourite moment">
+                <h3>Favourite Moment</h3>
+                <p>Forever iconic ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/idol3.jpg" alt="Best memories">
+                <h3>Best Memories</h3>
+                <p>Always special 💜</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MUSIC PLAYER SECTION -->
+    <section id="music" class="music-section">
+
+        <p class="small-title">A LITTLE MUSIC FOR YOUR SPECIAL DAY</p>
+
+        <h2>Our K-pop Playlist ♡</h2>
+
+        <p class="section-description">
+            Enjoy your favourite songs while celebrating your day!
+        </p>
+
+        <div class="music-player">
+
+            <div class="music-cover">
+                <span>🎵</span>
+                <p>♡ Birthday Playlist ♡</p>
+            </div>
+
+            <div class="music-info">
+                <h3 id="song-title">K-pop Song 1</h3>
+                <p>Special Birthday Playlist 💜</p>
+            </div>
+
+            <audio id="audio-player" src="music/song1.mp3"></audio>
+
+            <div class="music-controls">
+                <button onclick="previousSong()" title="Previous Song">⏮</button>
+                <button onclick="togglePlay()" id="play-button" title="Play/Pause">▶</button>
+                <button onclick="nextSong()" title="Next Song">⏭</button>
+            </div>
+
+            <p class="music-note">Made with ♡ for you</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BIRTHDAY LETTER -->
+    <section id="letter" class="letter-section">
+
+        <p class="small-title">A LITTLE MESSAGE FOR YOU</p>
+
+        <h2>Open Your Birthday Letter 💌</h2>
+
+        <div class="letter-card">
+
+            <div class="envelope">💌</div>
+
+            <p>
+                To someone who deserves all the happiness
+                in the world.
+            </p>
+
+            <button onclick="openLetter()">
+                Open My Letter ♡
+            </button>
+
+            <div id="letter-content" class="hidden">
+
+                <h3>Dear Birthday Girl ♡</h3>
+
+                <p>
+                    Happy Birthday!
+                    I hope this new chapter of your life
+                    brings you endless happiness,
+                    beautiful opportunities and unforgettable memories.
+                </p>
+
+                <p>
+                    May you always be surrounded by people
+                    who appreciate you.
+                    Keep smiling and continue chasing your dreams.
+                </p>
+
+                <h3>With Love, ♡</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL SURPRISE -->
+    <section class="surprise-section">
+
+        <h2>One Last Surprise! 🎂</h2>
+
+        <p>Ready for your birthday surprise?</p>
+
+        <button onclick="showSurprise()">
+            Click Here! 🎁
+        </button>
+
+        <div id="surprise"></div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made with ♡ just for you</p>
+        <p>Happy Birthday! 💜</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
